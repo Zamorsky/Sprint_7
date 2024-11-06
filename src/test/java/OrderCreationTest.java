@@ -1,10 +1,11 @@
+import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
-import org.junit.Test;
-import org.junit.Before;
+import io.restassured.response.Response;
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import io.restassured.response.Response;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -15,7 +16,8 @@ import static org.hamcrest.Matchers.notNullValue;
 public class OrderCreationTest {
 
     private OrdersClient ordersClient; // клиент для работы с заказами
-
+    private Order order;
+    private Response response;
     // Поле для хранения параметра цвета, который будет передан в каждый запуск теста
     private final String[] colors;
 
@@ -25,7 +27,7 @@ public class OrderCreationTest {
     }
 
     // Параметризация - разные комбинации цвета для теста
-    @Parameterized.Parameters(name = "Тест с цветами: {0}")
+    @Parameterized.Parameters
     public static Collection<Object[]> colorOptions() {
         return Arrays.asList(new Object[][]{
                 {new String[]{"BLACK"}},        // Только черный
@@ -38,33 +40,51 @@ public class OrderCreationTest {
     @Before
     public void setup() {
         ordersClient = new OrdersClient();
+        order = OrderGen.generateOrder();
     }
 
-    @After
-    public void tearDown() {
-        // Здесь можно добавить очистку данных, если требуется
+
+    @Step("Устанавливаем цвет")
+    public void setColor(String[] colors) {
+        order.setColor(colors);
     }
+
+    @Step("Проверяем поле track")
+    public void checkTrack(Response response) {
+        response.then().body("track", notNullValue());
+    }
+
+    @Step("Проверяем код ответа")
+    public void checkCode(Response response) {
+        response.then().statusCode(201);
+    }
+
+    @Step("Получить track")
+    public int getTrack(Response response) {
+        // Извлекаем id из JSON-ответа
+        return response.then().extract().path("track");
+    }
+
+
 
     @Test
-    @DisplayName("Создание заказа с разными цветами")
+    @DisplayName("Проверка - можно указать один, оба или совсем не указывать цвет.")
     public void testCreateOrderWithDifferentColors() {
-        // Создаем объект Order и передаем параметры
-        Order order = new Order();
-        order.setFirstName("Иван");
-        order.setLastName("Иванов");
-        order.setAddress("ул. Пушкина, д. 1");
-        order.setMetroStation("Пушкинская");
-        order.setPhone("+79111234567");
-        order.setRentTime(5);
-        order.setDeliveryDate("2024-12-01");
-        order.setComment("Тестовый заказ");
-        order.setColor(colors); // Устанавливаем цвет, согласно параметрам теста
-
+        setColor(colors); // Устанавливаем цвет, согласно параметрам теста
         // Отправляем запрос на создание заказа
-        Response response = ordersClient.create(order);
-
+        response = ordersClient.create(order);
         // Проверяем, что код ответа — 201 и в теле присутствует поле track
-        response.then().statusCode(201)
-                .and().body("track", notNullValue());
+        checkTrack(response);
+        checkCode(response);
     }
+
+    @After //отменяем заказ после проверки
+    public void tearDown() {
+        if (response != null) { // Проверяем, что `response` не null
+            int track = getTrack(response); // Получаем track из ответа
+            ordersClient.cancelOrder(track); // Отменяем заказ с этим track
+        }
+    }
+
+
 }

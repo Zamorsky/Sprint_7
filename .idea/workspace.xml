@@ -4,39 +4,127 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a525d68-da7a-4e27-aeeb-ed942c1fe25a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="0a525d68-da7a-4e27-aeeb-ed942c1fe25a" name="Changes" comment="сделал весь проект целиком">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Courier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourierCreds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierCreds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourierGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrderGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrderGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OrdersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrdersClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierAuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CourierCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierCreatingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zamorsky&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zamorsky/Sprint_7.git&quot;,
+    &quot;accountId&quot;: &quot;1da40871-4a68-4043-b7f2-811bd3dcae7e&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2oAJkLzFcItMi2FxK1ZEV8oyKpP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CourierAuthTest.executor": "Run",
+    "JUnit.CourierCreatingTest.executor": "Run",
+    "JUnit.CourierCreatingTest.testMissingNameFieldReturnsError.executor": "Run",
+    "JUnit.CourierCreatingTest.testMissingRequiredFieldReturnsError.executor": "Run",
+    "JUnit.OrderCreationTest.executor": "Run",
+    "JUnit.OrderListTest.executor": "Run",
+    "Maven.Sprint_7 [allure:serve].executor": "Run",
+    "Maven.Sprint_7 [clean,test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="allure serve target/surefire-reports/" />
+      <command value="mvn allure:serve" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CourierCreatingTest.testMissingNameFieldReturnsError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CourierCreatingTest" />
+      <option name="METHOD_NAME" value="testMissingNameFieldReturnsError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourierCreatingTest.testMissingRequiredFieldReturnsError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CourierCreatingTest" />
+      <option name="METHOD_NAME" value="testMissingRequiredFieldReturnsError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CourierCreatingTest.testMissingNameFieldReturnsError" />
+        <item itemvalue="JUnit.CourierCreatingTest.testMissingRequiredFieldReturnsError" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,6 +134,33 @@
       <option name="presentableId" value="Default" />
       <updated>1730307096415</updated>
     </task>
+    <task id="LOCAL-00001" summary="настроил pom файл">
+      <option name="closed" value="true" />
+      <created>1730307508292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730307508292</updated>
+    </task>
+    <task id="LOCAL-00002" summary="настроил pom файл">
+      <option name="closed" value="true" />
+      <created>1730307543440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730307543440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CODE_SMELLS_PROFILE" value="Project Default" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="настроил pom файл" />
+    <MESSAGE value="сделал весь проект целиком" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал весь проект целиком" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
