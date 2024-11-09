@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a525d68-da7a-4e27-aeeb-ed942c1fe25a" name="Changes" comment="сделал весь проект целиком">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Courier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Courier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourierCreds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierCreds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CourierGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourierGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrderGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrderGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OrdersClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OrdersClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CourierAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierAuthTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CourierCreatingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CourierCreatingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrderCreationTest.java" afterDir="false" />
@@ -65,26 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.CourierAuthTest.executor": "Run",
-    "JUnit.CourierCreatingTest.executor": "Run",
-    "JUnit.CourierCreatingTest.testMissingNameFieldReturnsError.executor": "Run",
-    "JUnit.CourierCreatingTest.testMissingRequiredFieldReturnsError.executor": "Run",
-    "JUnit.OrderCreationTest.executor": "Run",
-    "JUnit.OrderListTest.executor": "Run",
-    "Maven.Sprint_7 [allure:serve].executor": "Run",
-    "Maven.Sprint_7 [clean,test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.CourierAuthTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourierCreatingTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourierCreatingTest.testMissingNameFieldReturnsError.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CourierCreatingTest.testMissingRequiredFieldReturnsError.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderCreationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint_7 [allure:serve].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Sprint_7 [clean,test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -93,11 +86,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="allure serve target/surefire-reports/" />
-      <command value="mvn allure:serve" />
       <command value="mvn clean test" />
+      <command value="mvn allure:serve" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CourierCreatingTest.testMissingNameFieldReturnsError">
     <configuration name="CourierCreatingTest.testMissingNameFieldReturnsError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <option name="PACKAGE_NAME" value="" />
@@ -150,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730307543440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="сделал весь проект целиком">
+      <option name="closed" value="true" />
+      <created>1730924986505</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730924986506</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,5 +163,17 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/Courier.java</url>
+          <line>3</line>
+          <properties field="firstName" class="Courier" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
