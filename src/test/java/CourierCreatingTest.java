@@ -132,5 +132,6 @@ public class CourierCreatingTest {
     public int getCourierId(Response responseLogin) {
         return responseLogin.then().extract().path("id");
     }
+}
 
 
